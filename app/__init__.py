@@ -14,7 +14,7 @@ def create_app(config_class=Config):
     migrate.init_app(app, db)
 
     from app.main import bp as main_bp
-    app.register_blueprint(main_bp)
+    app.register_blueprint(main_bp, url_prefix='/main')
 
     from app.transactions import bp as transactions_bp
     app.register_blueprint(transactions_bp, url_prefix='/transactions')
