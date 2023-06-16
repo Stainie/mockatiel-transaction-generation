@@ -1,0 +1,9 @@
+{
+    "python.testing.pytestArgs": [
+        "--rootdir=${workspaceFolder}/app",
+        "-m",
+        "not integration"  // Add any additional pytest arguments if needed
+    ],
+    "python.testing.pytestEnabled": true
+    
+}
